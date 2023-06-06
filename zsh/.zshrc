@@ -1,5 +1,14 @@
 eval "$(starship init zsh)"
 
+# DIY attempt at a prompt
+# autoload -Uz vcs_info
+# precmd()  { vcs_info }
+
+# zstyle ':vcs_info:git:*' formats 'on %b'
+
+# NEWLINE=$'\n'
+# PROMPT="[%F{red}aditya%f@%F{cyan}%1d%f] %F{magenta}${vcs_info_msg_0_}%f${NEWLINE}%F{green}❯%f "
+
 # git aliases
 alias gs="git status"
 alias ga="git add"
@@ -29,3 +38,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+export PATH="$PATH:/opt/gradle/gradle-7.2/bin"
