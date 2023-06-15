@@ -1,4 +1,4 @@
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # DIY attempt at a prompt
 # autoload -Uz vcs_info
@@ -9,6 +9,10 @@ eval "$(starship init zsh)"
 # NEWLINE=$'\n'
 # PROMPT="[%F{red}aditya%f@%F{cyan}%1d%f] %F{magenta}${vcs_info_msg_0_}%f${NEWLINE}%F{green}❯%f "
 
+# NEWLINE=$'\n'
+# PROMPT=" %F{cyan}%1d%f${NEWLINE}[%F{red}aditya%f@%F{cyan}mbp%f]$ "
+
+PROMPT="[%F{red}aditya%f@%F{cyan}mbp%f]$ "
 # git aliases
 alias gs="git status"
 alias ga="git add"
