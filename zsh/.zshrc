@@ -44,3 +44,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 export PATH="$PATH:/opt/gradle/gradle-7.2/bin"
+
+export PATH="$HOME/.emacs.d/bin:$PATH"
