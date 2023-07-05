@@ -13,6 +13,11 @@
 # PROMPT=" %F{cyan}%1d%f${NEWLINE}[%F{red}aditya%f@%F{cyan}mbp%f]$ "
 
 PROMPT="[%F{red}aditya%f@%F{cyan}mbp%f]$ "
+
+# exa instead of ls
+alias ls="exa"
+alias tree="exa --tree"
+
 # git aliases
 alias gs="git status"
 alias ga="git add"
@@ -46,3 +51,10 @@ export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 export PATH="$PATH:/opt/gradle/gradle-7.2/bin"
 
 export PATH="$HOME/.emacs.d/bin:$PATH"
+
+# zoxide
+eval "$(zoxide init zsh)"
+
+#using brew as zsh package manager
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
